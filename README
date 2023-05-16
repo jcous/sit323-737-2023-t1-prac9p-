@@ -1,0 +1,34 @@
+# to create a Persistent Volume 
+#kubectl apply -f .\createPersistentVolume.yaml
+
+# to create Persistent Volume Claim
+#kubectl apply -f .\createPersistentVolumeClaim.yaml
+
+# to create Storage class
+#kubectl apply -f .\createStorageClass.yaml
+
+# to create secret for mongo db creds
+#kubectl apply -f .\createSecret.yaml
+
+# to deploy the apps/ create pods
+#kubectl apply -f .\createAppDeployment.yaml
+
+# to create services 
+#kubectl apply -f .\createAppService.yaml
+
+
+##CRUD COMMANDS##
+#Create (POST): Create a new Todo item.
+#curl -X POST -H "Content-Type: application/json" -d '{"title":"Buy groceries","description":"Go to the supermarket","completed":false}' http://localhost:8080/api/todos
+
+#Read (GET): Retrieve all Todo items.
+#curl http://localhost:8080/api/todos
+
+#Read (GET): Retrieve a specific Todo item by its ID.
+#curl http://localhost:8080/api/todos/<todoId>
+
+#Update (PUT): Update a specific Todo item by its ID.
+#curl -X PUT -H "Content-Type: application/json" -d '{"title":"Buy groceries","description":"Go to the supermarket","completed":true}' http://localhost:8080/api/todos/<todoId>
+
+#Delete (DELETE): Delete a specific Todo item by its ID.
+#curl -X DELETE http://localhost:8080/api/todos/<todoId>
